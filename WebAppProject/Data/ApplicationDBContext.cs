@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WebAppProject.Models;
 
 namespace WebAppProject.Data
 {
@@ -8,5 +9,7 @@ namespace WebAppProject.Data
         {
             
         }
+
+        public DbSet<Category> Categories { get; set; } // Here Categories is the table name
     }
 }
